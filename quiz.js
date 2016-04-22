@@ -12,7 +12,7 @@ var Quiz = function(questions){
 	}
 	this.questionIsBonus = function(){
 		var isBonus = false;
-		if(bonusNumber == this.currentQuestion.id){
+		if(bonusNumber == this.currentQuestion.id - 1){
 			isBonus = true;
 		}
 		return isBonus;
